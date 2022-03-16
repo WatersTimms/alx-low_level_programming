@@ -5,20 +5,22 @@
 /* betty style doc for function main goes there */
 /**
 * main - entry point
-* print the lowercase of an alphabet
+* print all possible combination of a single-digit numbers
 * Return: 0
 */
 int main(void)
 {
-char c = 'a';
-while (c <= 'z')
+int i = 0;
+while (i < 10)
 {
-if
-(c != 'e' && c != 'q');
-putchar(c);
-	c++;
+putchar(i + '0');
+if (i < 9)
+{
+putchar(44);
+putchar(32);
 }
-	putchar('\n');
-/* your code goes there */
+i++;
+}
+putchar('\n');
 return (0);
 }

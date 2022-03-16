@@ -5,17 +5,15 @@
 /* betty style doc for function main goes there */
 /**
 * main - entry point
-* print the lowercase of an alphabet
+* print alphabets in reverse form from z to a
 * Return: 0
 */
 int main(void)
 {
-char c = 'a';
- while (c <= 'z')
+char c;
+for (c = 'z'; c >= 'a'; c--)
 {
-if (c != 'q' && c != 'e')
 putchar(c);
-c++;
 }
 putchar('\n');
 return (0);
